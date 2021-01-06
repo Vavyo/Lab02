@@ -1,9 +1,15 @@
 "use strict";
-
 //console.log('app.js connected to index');
 
-var userInput;
+//get user
+var userName = prompt("Who are you?");
+alert("Welcome to my page, " + userName + "!");
 
+//declare variables
+var userInput;
+var answers = [,,,,];
+
+//Checks answers to a given boolean key
 function validate(input, compare){
   var result = false;
   input = input.toLowerCase();
@@ -20,8 +26,7 @@ function validate(input, compare){
   return(result);
 }
 
-var answers = [,,,,];
-
+//function called when the Attempt Quiz button element is clicked
 function startQuiz(){
   //console.log('click');
 
@@ -52,8 +57,8 @@ function startQuiz(){
     }
   }
   if(result){
-    alert("Congrats! You passed!");
+    alert("Congrats, " + userName + "! You passed!");
   }else{
-    alert("Sorry. You failed.");
+    alert("Sorry, " + userName + ". You failed.");
   }
 }
