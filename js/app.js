@@ -64,6 +64,7 @@ function startQuiz(){
   }
 }
 
+
 function RNGQuestion(){
   var number = Math.floor(Math.random() * 10) + 1;   // Found the random generator on W3 schools (https://www.w3schools.com/js/js_random.asp)
     // console.log('The random number is: ', number);
@@ -94,6 +95,7 @@ function RNGQuestion(){
         alert('You did not guess the answer. The right answer was: ' + number);
     }
 }
+var score = 0;
 
 function travelQuestions(){
   var locations = ['canada','washington dc','wyoming'];
@@ -113,5 +115,6 @@ function travelQuestions(){
       }
     }
   }
-  alert('Your final score is: ' +score);
+
+alert('Your final score is: ' +score);
 }
