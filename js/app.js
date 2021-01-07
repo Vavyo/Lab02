@@ -62,3 +62,26 @@ function startQuiz(){
     alert("Sorry, " + userName + ". You failed.");
   }
 }
+
+var score = 0;
+
+function travelQuestions(){
+  var locations = ['canada','washington dc','wyoming'];
+  var attemptsRemaining = 6;
+  var guess;
+  var i;
+  while(attemptsRemaining > 0){
+    console.log('attempts remaining: ' + attemptsRemaining);
+    attemptsRemaining--;
+    guess = prompt('Where have I traveled out of state? (answer could be a country or a state!)');
+    for (i = 0; i<locations.length; i++){
+      if(guess.toLowerCase()=== locations[i]){
+        alert('Congrats! You nailed it!');
+        score++
+        attemptsRemaining = 0;
+        break;
+      }
+    }
+  }
+}
+alert('Your final score is: ' +score);
