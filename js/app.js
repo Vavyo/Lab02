@@ -73,7 +73,16 @@ function RNGQuestion(){
     var right = false
     // create a while loop with if statements to check for correct answers.
     while(guessCounter < 4){
-        var question6 = prompt('Guess a number between 1 and 10. You have ' + loopCounter + ' guesses remaining.');
+        var question6 = parseInt(prompt('Guess a number between 1 and 10. You have ' + loopCounter + ' guesses remaining.'));
+        
+        while(question6){
+
+          alert('try again');
+          question6 = parseInt(prompt('Guess a number between 1 and 10. You have ' + loopCounter + ' guesses remaining.'));
+          console.log(question6)
+        }
+        console.log(question6);
+
         loopCounter -= 1;
         // console.log(question6)
         if(question6 !== number && question6 > number){
