@@ -8,6 +8,7 @@ alert("Welcome to my page, " + userName + "!");
 //declare variables
 var userInput;
 var answers = [,,,,];
+var score = 0;
 
 //Checks answers to a given boolean key
 function validate(input, compare){
@@ -63,7 +64,36 @@ function startQuiz(){
   }
 }
 
-var score = 0;
+function RNGQuestion(){
+  var number = Math.floor(Math.random() * 10) + 1;   // Found the random generator on W3 schools (https://www.w3schools.com/js/js_random.asp)
+    // console.log('The random number is: ', number);
+    var guessCounter = 0;
+    var loopCounter = 4;
+    var right = false
+    // create a while loop with if statements to check for correct answers.
+    while(guessCounter < 4){
+        var question6 = prompt('Guess a number between 1 and 10. You have ' + loopCounter + ' guesses remaining.');
+        loopCounter -= 1;
+        // console.log(question6)
+        if(question6 !== number && question6 > number){
+            alert("You guessed too high! Guess again!");
+            guessCounter += 1;
+        }else if(question6 !== number && question6 < number){
+            alert("You guessed too low! Guess again!");
+            guessCounter += 1;
+        }
+        else{
+            alert('You got lucky! Good job.');
+            score += 1;
+            guessCounter = 4;
+            right = true
+        }
+        // console.log(guessCounter);
+    } 
+    if(right === false){
+        alert('You did not guess the answer. The right answer was: ' + number);
+    }
+}
 
 function travelQuestions(){
   var locations = ['canada','washington dc','wyoming'];
@@ -83,5 +113,5 @@ function travelQuestions(){
       }
     }
   }
+  alert('Your final score is: ' +score);
 }
-alert('Your final score is: ' +score);

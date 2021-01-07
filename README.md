@@ -16,4 +16,4 @@ An About Me webpage that has abuilt in quiz feature to test the user's knowledge
 * I was going to base it off a game called [A Dark Room](https://adarkroom.doublespeakgames.com/) but I realized without knowing the JS behind it it wouldnt work.
 
 
-**For lab 4 the driver was Ben Hemann and the Navigator was Nathan Hall**
+***For lab 4 the driver was Ben Hemann and the Navigator was Nathan Hall***
