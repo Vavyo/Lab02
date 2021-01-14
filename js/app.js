@@ -2,8 +2,8 @@
 //console.log('app.js connected to index');
 
 //get user
-var userName = prompt("Who are you?");
-alert("Welcome to my page, " + userName + "!");
+// var userName = prompt("Who are you?");
+// alert("Welcome to my page, " + userName + "!");
 
 //declare variables
 var userInput;

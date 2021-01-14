@@ -1,22 +1,30 @@
-*{
-  background-color: rgb(132, 70, 202);
+* {
+  display: block;
+  margin: auto;
+  background-color: #1a1a1D;
+  color:whitesmoke;
+  font-family: sans-serif;
 }
-
+head{
+  display: none;
+}
 header{
-  
-  border: 4px solid teal;
+  max-width: 300px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: teal;
 }
-
-main{
-  margin: 35px;
-  font-size: 150%;
+body{
+  max-width: 1280px;
 }
-.info{
-  text-align: justify;
-  display: inline;
+h1{
+  max-width: 400px;
+  text-align: center;
 }
-
-#quiz{
-  justify-self: center;
+script{
+  display:none;
+}
+button{
+  margin-top: 16px;
   background-color: teal;
 }
