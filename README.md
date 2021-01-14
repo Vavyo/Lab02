@@ -1,4 +1,4 @@
-# LAB - 2
+# LAB - 3
 
 ## About Me Quiz
 
@@ -14,6 +14,8 @@ An About Me webpage that has abuilt in quiz feature to test the user's knowledge
 * I'll just do my Learning Journal here next time and then submit it.
 * I was going to make the CSS prettier but it's still a bit too confusing for me.
 * I was going to base it off a game called [A Dark Room](https://adarkroom.doublespeakgames.com/) but I realized without knowing the JS behind it it wouldnt work.
+
+* Now updated to fit the lab 3 and lab 4 requirements.
 
 
 ***For lab 4 the driver was Ben Hemann and the Navigator was Nathan Hall***
